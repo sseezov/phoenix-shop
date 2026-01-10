@@ -9,7 +9,7 @@ defmodule ShopWeb.Router do
     plug :put_root_layout, html: {ShopWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug Plugs.SetPlatform
+    plug Plugs.SetPlatform, :pc
   end
 
   pipeline :api do
